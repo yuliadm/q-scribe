@@ -77,9 +77,50 @@ Additional flags (useful in some setups):
 - `--server.address 100.xxx.xx.xx` for local-only access (here goes the Tailscale IP)
 - `--server.port 8501` for the port
 - disabling CORS/XSRF protections is convenient for quick experiments, do NOT do this when exposing the app publicly.
-  
 
-**LinkedIn article**: [https://www.linkedin.com/pulse/q-scribe-two-person-zero-subscription-transcription-service-kulagina-4k0jc/?trackingId=s60fqzJwbEGVt9C2q2GPhA%3D%3D]
+### The practical “remote team” trick
+
+How to run Streamlit on your laptop (the “server”) and let your colleague open it in their browser over Tailscale, without putting anything on the public internet?
+
+(1) Install and log in to Tailscale (Host setup)
+
+ Install Tailscale on your laptop, then authenticate and verify your laptop has a Tailscale IPv4:
+```bash
+sudo tailscale up
+tailscale ip -4
+```
+Example output (your laptop’s tailnet IP): `100.32.105.55`
+
+(2) Run your Streamlit app
+
+Run Streamlit listening on all interfaces (this is required for device sharing NAT/IP aliasing to work reliably):
+```
+streamlit run app.py --server.address 0.0.0.0 --server.port 8080
+```
+Notes:
+
+- You can use port 8501 too, but 8080 is often more “friendly”.
+- Keep this terminal running. 
+
+(3) Invite your colleague and share your device
+
+In the Tailscale admin UI:
+
+- Go to Users →Invite user → enter colleague’s email
+- They must accept and log in
+- Go to Machines/Devices →Select your laptop →Click Share… (or “Device sharing”)
+- Enter colleague’s email and send, your colleague must accept the share.
+
+(4) Install and log in to Tailscale (Colleague setup)
+
+They install Tailscale and log in with the invited email. In your colleague’s Tailscale UI, your laptop appears as a shared device and it will typically show a different 100.x IP in their tailnet than the one you see, e. g. 100.89.107.55.
+
+(5) Colleague opens the Streamlit URL in their browser
+
+They must use the IP shown on their side and the port you chose: http://100.89.107.55:8080 
+
+
+**LinkedIn article**: https://www.linkedin.com/pulse/q-scribe-two-person-zero-subscription-transcription-service-kulagina-4k0jc/?trackingId=s60fqzJwbEGVt9C2q2GPhA%3D%3D
 
 ### UI screenshot
 
