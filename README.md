@@ -83,6 +83,6 @@ Additional flags (useful in some setups):
 
 ### UI screenshot
 
-<img width="612" height="896" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe-screenshot.png" />
+<img width="1024" height="1696" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe-screenshot.png" />
 
 
