@@ -78,7 +78,6 @@ Additional flags (useful in some setups):
 - disabling CORS/XSRF protections is convenient for quick experiments, do NOT do this when exposing the app publicly.
   
 
-Medium post: 
-https://
+LinkedIn article: [https://](https://teams.live.com/l/message/19:793d5698bd71f30667a135c7dc682b8a5f5dafd174606ef8fd41eeaa548f23f7@oneToOne.skype/1769707579380?context=%7B%22contextType%22%3A%22chat%22%7D)
 
 
