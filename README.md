@@ -7,7 +7,8 @@
 
 
 ### Overview
-                                                                                                     
+This is a single-file app: `app.py`, which combines the workflow (below) + the minimal Streamlit UI.
+                                                                                                   
 ```bash
 Upload video   ➡️   save to temp folder   ➡️   extract audio   ➡️   split into short WAV chunks  
                                                                              ⬇️
@@ -78,6 +79,10 @@ Additional flags (useful in some setups):
 - disabling CORS/XSRF protections is convenient for quick experiments, do NOT do this when exposing the app publicly.
   
 
-**LinkedIn article**: [https://teams.live.com/l/message/19:793d5698bd71f30667a135c7dc682b8a5f5dafd174606ef8fd41eeaa548f23f7@oneToOne.skype/1769707579380?context=%7B%22contextType%22%3A%22chat%22%7D]
+**LinkedIn article**: [https://www.linkedin.com/pulse/q-scribe-two-person-zero-subscription-transcription-service-kulagina-4k0jc/?trackingId=s60fqzJwbEGVt9C2q2GPhA%3D%3D]
+
+### UI screenshot
+
+<img width="612" height="896" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe-screenshot.png" />
 
 
