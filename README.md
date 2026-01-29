@@ -1,4 +1,4 @@
-# Q-Scribe (Quick transcription DYI)
+# Q-Scribe (Quick Transcription DYI)  🎙 $\rightarrow$ 📝
 ## A Two-Person, Zero-Subscription Transcription “Service” Built in an Afternoon
 
 
