@@ -63,7 +63,7 @@ For each WAV chunk:
 - `temperature=0.0` (more deterministic output)
 - `num_beams` (beam search: higher often improves quality, but slows down).
 
-
+The text is cleaned, appended, and finally joined into one transcript.
 
 ## Running the app locally
 
@@ -73,7 +73,7 @@ streamlit run app.py
 ```
 Additional flags (useful in some setups):
 
-- `--server.address 127.0.0.1` for local-only access
+- `--server.address 100.xxx.xx.xx` for local-only access (here goes the Tailscale IP)
 - `--server.port 8501` for the port
 - disabling CORS/XSRF protections is convenient for quick experiments, do NOT do this when exposing the app publicly.
   
@@ -81,4 +81,4 @@ Additional flags (useful in some setups):
 Medium post: 
 https://
 
-The text is cleaned, appended, and finally joined into one transcript.
+
