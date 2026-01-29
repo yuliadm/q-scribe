@@ -3,7 +3,7 @@
 
 
 ### Overview
-
+```bash
 Upload video   ➡️   save to temp folder   ➡️   extract audio   ➡️   split into short WAV chunks  
                                                                              ⬇️
                                                           run Whisper on each chunk with progress UI 
@@ -11,7 +11,7 @@ Upload video   ➡️   save to temp folder   ➡️   extract audio   ➡️   
                                                                     clean up the text
                                                                              ⬇️
                  delete temp files (+ clear GPU cache)   ⬅️   show preview + let user download  
-                                                                                                           
+```                                                                                                           
           
 
 
