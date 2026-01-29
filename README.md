@@ -66,7 +66,7 @@ For each WAV chunk:
 
 The text is cleaned, appended, and finally joined into one transcript.
 
-## Running the app locally
+### Running the app locally
 
 Start Streamlit in terminal (from the dir where app.py lives):
 ```bash
@@ -97,7 +97,7 @@ Run Streamlit listening on all interfaces (this is required for device sharing N
 ```
 streamlit run app.py --server.address 0.0.0.0 --server.port 8080
 ```
-Notes:
+**Notes:**
 
 - You can use port 8501 too, but 8080 is often more “friendly”.
 - Keep this terminal running. 
