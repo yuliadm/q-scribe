@@ -4,8 +4,13 @@
 
 ### Overview
 
-Upload video → save to temp folder → extract audio → split into short WAV chunks → run Whisper on each chunk with progress UI → 
-           delete temp files (and optionally clear GPU cache)   show preview + let user download →      clean up the text → 
+Upload video   ➡️   save to temp folder   ➡️   extract audio   ➡️   split into short WAV chunks  
+                                                                             ⬇️
+                                                          run Whisper on each chunk with progress UI 
+                                                                             ⬇️
+                                                                    clean up the text
+                                                                             ⬇️
+                 delete temp files (+ clear GPU cache)   ⬅️   show preview + let user download  
                                                                                                            
           
 
