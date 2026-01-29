@@ -7,16 +7,8 @@
 
 
 ### Overview
-```bash
-Upload video   ➡️   save to temp folder   ➡️   extract audio   ➡️   split into short WAV chunks  
-                                                                             ⬇️
-                                                          run Whisper on each chunk with progress UI 
-                                                                             ⬇️
-                                                                    clean up the text
-                                                                             ⬇️
-                 delete temp files (+ clear GPU cache)   ⬅️   show preview + allow user to download  
-```                                                                                                           
-          
+                                                                                                     
+<img width="612" height="396" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe-scheme.png" />
 
 ### A simple guide: from zero to working prototype
 1. Create the environment
