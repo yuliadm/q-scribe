@@ -67,7 +67,7 @@ The text is cleaned, appended, and finally joined into one transcript.
 
 ## Running the app locally
 
-Start Streamlit in terminal:
+Start Streamlit in terminal (from the dir where app.py lives):
 ```bash
 streamlit run app.py
 ```
