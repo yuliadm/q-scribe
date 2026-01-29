@@ -2,7 +2,7 @@
 ## A Two-Person, Zero-Subscription Transcription “Service” Built in an Afternoon
 
 
-<img width="600" height="324" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe.png" />
+<img width="600" height="364" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe.png" />
 
 
 
