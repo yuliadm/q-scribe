@@ -1,8 +1,8 @@
-# Q-Scribe (Quick Transcription DYI) ⚙️
+# Q-Scribe (Quick Transcription DYI) 
 ## A Two-Person, Zero-Subscription Transcription “Service” Built in an Afternoon
 
 
-<img width="600" height="364" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe.png" />
+<img width="612" height="396" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe.png" />
 
 
 
