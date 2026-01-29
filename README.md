@@ -1,9 +1,8 @@
-# Q-Scribe (Quick Transcription DYI) 
+# Q-Scribe 
 ## A Two-Person, Zero-Subscription Transcription “Service” Built in an Afternoon
 
 
 <img width="612" height="396" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe.png" />
-
 
 
 
@@ -15,10 +14,9 @@ Upload video   ➡️   save to temp folder   ➡️   extract audio   ➡️   
                                                                              ⬇️
                                                                     clean up the text
                                                                              ⬇️
-                 delete temp files (+ clear GPU cache)   ⬅️   show preview + let user download  
+                 delete temp files (+ clear GPU cache)   ⬅️   show preview + allow user to download  
 ```                                                                                                           
           
-
 
 ### A simple guide: from zero to working prototype
 1. Create the environment
