@@ -6,7 +6,7 @@
 
 
 
-### Overview
+## Overview
 This is a single-file app: `app.py`, which combines the workflow (below) + the minimal Streamlit UI.
                                                                                                    
 ```bash
@@ -19,7 +19,7 @@ Upload video   ➡️   save to temp folder   ➡️   extract audio   ➡️   
                  delete temp files (+ clear GPU cache)   ⬅️   show preview + allow user to download  
 ```      
 
-### A simple guide: from zero to working prototype
+## A simple guide: from zero to working prototype
 1. Create the environment
 
 Set up a Python environment and install dependencies (typically listed in requirements.txt).
@@ -66,7 +66,7 @@ For each WAV chunk:
 
 The text is cleaned, appended, and finally joined into one transcript.
 
-### Running the app locally
+## Running the app locally
 
 Start Streamlit in terminal (from the dir where app.py lives):
 ```bash
@@ -78,11 +78,11 @@ Additional flags (useful in some setups):
 - `--server.port 8501` for the port
 - disabling CORS/XSRF protections is convenient for quick experiments, do NOT do this when exposing the app publicly.
 
-### The practical “remote team” trick
+## The practical “remote team” trick
 
 How to run Streamlit on your laptop (the “server”) and let your colleague open it in their browser over Tailscale, without putting anything on the public internet?
 
-(1) Install and log in to Tailscale (Host setup)
+1. Install and log in to Tailscale (Host setup)
 
  Install Tailscale on your laptop, then authenticate and verify your laptop has a Tailscale IPv4:
 ```bash
@@ -91,7 +91,7 @@ tailscale ip -4
 ```
 Example output (your laptop’s tailnet IP): `100.32.105.55`
 
-(2) Run your Streamlit app
+2. Run your Streamlit app
 
 Run Streamlit listening on all interfaces (this is required for device sharing NAT/IP aliasing to work reliably):
 ```
@@ -102,7 +102,7 @@ streamlit run app.py --server.address 0.0.0.0 --server.port 8080
 - You can use port 8501 too, but 8080 is often more “friendly”.
 - Keep this terminal running. 
 
-(3) Invite your colleague and share your device
+3. Invite your colleague and share your device
 
 In the Tailscale admin UI:
 
@@ -111,18 +111,18 @@ In the Tailscale admin UI:
 - Go to Machines/Devices →Select your laptop →Click Share… (or “Device sharing”)
 - Enter colleague’s email and send, your colleague must accept the share.
 
-(4) Install and log in to Tailscale (Colleague setup)
+4. Install and log in to Tailscale (Colleague setup)
 
 They install Tailscale and log in with the invited email. In your colleague’s Tailscale UI, your laptop appears as a shared device and it will typically show a different 100.x IP in their tailnet than the one you see, e. g. 100.89.107.55.
 
-(5) Colleague opens the Streamlit URL in their browser
+5. Colleague opens the Streamlit URL in their browser
 
 They must use the IP shown on their side and the port you chose: http://100.89.107.55:8080 
 
 
 **LinkedIn article**: https://www.linkedin.com/pulse/q-scribe-two-person-zero-subscription-transcription-service-kulagina-4k0jc/?trackingId=s60fqzJwbEGVt9C2q2GPhA%3D%3D
 
-### UI screenshot
+## UI screenshot
 
 <img width="1024" height="1696" alt="image" src="https://github.com/yuliadm/q-scribe/blob/main/assets/q-scribe-screenshot.png" />
 
