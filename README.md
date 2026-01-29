@@ -2,6 +2,11 @@
 ## A Two-Person, Zero-Subscription Transcription “Service” Built in an Afternoon
 
 
+<img width="536" height="324" alt="image" src="[https://github.com/yuliadm/q-scribe/assets/q-scribe.png" />
+
+
+
+
 ### Overview
 ```bash
 Upload video   ➡️   save to temp folder   ➡️   extract audio   ➡️   split into short WAV chunks  
