@@ -10,7 +10,6 @@ import re
 import shutil
 import tempfile
 from pathlib import Path
-
 import streamlit as st
 from pydub import AudioSegment
 import torch
@@ -18,7 +17,7 @@ from transformers import pipeline
 
 
 # ---------------------------
-# Text cleanup (your function)
+# Text cleanup (minimal)
 # ---------------------------
 def clean_ru_text(t: str) -> str:
     t = re.sub(r"\[(?:музыка|аплодисменты|смех|шум|тишина|music|noise|laughter).*?\]", " ", t, flags=re.I)
