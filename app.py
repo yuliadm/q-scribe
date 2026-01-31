@@ -99,7 +99,7 @@ def cleanup_cuda():
 # ---------------------------
 # Streamlit UI
 # ---------------------------
-st.set_page_config(page_title="Hotel Transcription Tool", page_icon="📝", layout="centered")
+st.set_page_config(page_title="Minimalistic Transcription Tool", page_icon="📝", layout="centered")
 
 st.title("📝 Video → Text (Whisper)")
 st.caption("Upload a video, the server transcribes it, download the transcript as .txt")
@@ -117,7 +117,7 @@ with st.sidebar:
     num_beams = st.slider("Beam search (quality vs speed)", min_value=1, max_value=10, value=5)
 
     st.divider()
-    if st.button("🧼 Clean CUDA cache"):
+    if st.button("Clean CUDA cache"):
         cleanup_cuda()
         st.success("CUDA cache cleared.")
 
